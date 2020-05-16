@@ -12,4 +12,5 @@ body {
 
   /* Center and scale the image nicely */
   background-size: cover;
+  background-position: bottom;
 }

@@ -1,16 +1,19 @@
+body, html {
+  height: 100%;
+  z-index: -1;
+}
+
 body {
   /* The image used */
   background-image: url("cloud.jpg");
   z-index: -1;
 
+  /* Full height */
+  height: 100%;
+
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.background-image {
-  size: cover;
-  position: center;
-
+  z-index: -1;
 }

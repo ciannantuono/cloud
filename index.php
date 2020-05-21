@@ -21,6 +21,20 @@
 ?>
 
 <html>
+  <head>
+
+    <title> COVID-19 Screening </title>
+
+    <meta charset="UTF-8">
+    <meta name = "description" content = "COVID-19">
+    <meta name = "keywords" content = "HTML, CSS, XML, JavaScript">
+    <meta name = "author" content = "Christian Iannantuono">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-auth.js"></script>
+
+  </head>
   <body>
     <form method="post" action="index.php">
       Username<br/>

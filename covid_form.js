@@ -13,8 +13,23 @@ firebase.initializeApp(firebaseConfig);
 
 const auth = firebase.auth();
 
+
 function signOut(){
-  auth.signOut();
-  alert("your answers have been submitted");
-  window.location.href = 'index.html';
+  if(document.getElementById("myCheck").unchecked) {
+      alert("Please accept the Terms and Conditions");
+  }
+}
+
+
+
+function signOut(){
+  alert("By clicking OK you are verifying your answers are correct.");
+  if(document.getElementById("pass").checked) {
+      window.location.href = 'pass.html';
+  }
+  if(document.getElementById("fail").checked) {
+      window.location.href = 'fail.html';
+  }
+
+    auth.signOut();
 }

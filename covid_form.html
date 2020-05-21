@@ -30,43 +30,46 @@
   <form>
     <tr>
       <td>Do you or have you had any of the following symptoms in the past 48 hours: New or worsening cough, blah, blah, something else?</td>
-      <td><input type="radio" id="yes1" name="gender" value="yes1">
+      <td><input type="radio" id="fail" name="gender" value="yes1">
           <label for="yes1">YES</label><br></td>
-      <td><input type="radio" id="no1" name="gender" value="no1">
+      <td><input type="radio" id="pass" name="gender" value="no1">
           <label for="no1">NO</label><br></td>
     </tr>
   </form>
   <form>
     <tr>
       <td>Have you come into contact with anyone who has or is presumed to have COVID-19? Have you come into contact with anyone who has or is presumed to have COVID-19?</td>
-      <td><input type="radio" id="yes2" name="gender" value="yes2">
+      <td><input type="radio" id="fail" name="gender" value="yes2">
           <label for="yes2">YES</label><br></td>
-      <td><input type="radio" id="no2" name="gender" value="no2">
+      <td><input type="radio" id="pass" name="gender" value="no2">
           <label for="no2">NO</label><br></td>
     </tr>
   </form>
   <form>
     <tr>
       <td>Do you have a mask to wear to work today?</td>
-      <td><input type="radio" id="yes3" name="gender" value="yes3">
+      <td><input type="radio" id="pass" name="gender" value="yes3">
           <label for="yes3">YES</label><br></td>
-      <td><input type="radio" id="no3" name="gender" value="no3">
+      <td><input type="radio" id="fail" name="gender" value="no3">
           <label for="no3">NO</label><br></td>
     </tr>
   </form>
   <form>
     <tr>
       <td>Have you read Artech Images Inc. Terms and Conditions and Privacy Statement?</td>
-      <td><input type="radio" id="yes4" name="gender" value="yes4">
+      <td><input type="radio" id="pass" name="gender" value="yes4">
           <label for="yes4">YES</label><br></td>
-      <td><input type="radio" id="no4" name="gender" value="no4">
+      <td><input type="radio" id="fail" name="gender" value="no4">
           <label for="no4">NO</label><br></td>
     </tr>
   </form>
+  <form>
+    <tr>
+      <td>I have read and agreed to the Artech Images Inc Terms and Agreements and Privacy Statement</td>
+      <td><input type="checkbox" id="myCheck" onclick="myFunction()"></td>
+    </tr>
+  </form>
   </table>
-
-
-
 
 
 
@@ -90,6 +93,7 @@
   margin-top: 15px;
   margin-left: 35%;
 }
+
 
 th, td {
   padding-bottom: 30px;
